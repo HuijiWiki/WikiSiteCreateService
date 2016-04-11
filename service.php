@@ -4,7 +4,7 @@ use \Workerman\Lib\Timer;
 require_once '../Workerman/Autoloader.php';
 require_once 'create.php';
 // Create a Websocket server
-$ws_worker = new Worker("websocket://121.42.144.9:4000");
+$ws_worker = new Worker("websocket://".gethostbyname("www.huiji.wiki").":4000");
 
 // 4 processes
 $ws_worker->count = 4;
